@@ -8,7 +8,7 @@
     <ProjectGuid>{0D940125-C83F-4E88-BD76-652202CC248D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Develore.Windows.Core</RootNamespace>
+    <RootNamespace>Develore.Windows</RootNamespace>
     <AssemblyName>Develore.Windows.Core</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
@@ -35,10 +35,14 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
-    <Folder Include="Input\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoreExtensions.cs" />
+    <Compile Include="Input\CommandBase.cs" />
+    <Compile Include="Input\CommandExecutedEventArgs.cs" />
+    <Compile Include="Input\CommandExecutingEventArgs.cs" />
+    <Compile Include="Input\RelayCommand.cs" />
+    <Compile Include="Models\ModelBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
